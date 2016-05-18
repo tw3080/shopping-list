@@ -1,0 +1,68 @@
+body {
+  background-color: lightgray;
+}
+
+.main-header,
+.main-container,
+.navbar {
+  text-align: center;
+}
+
+.main-container {
+  border: 1px solid #000;
+  max-width: 25em;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-container .three-qtr-col {
+  box-sizing: border-box;
+  border: 1px solid blue;
+  width: 74%;
+  margin: 0 1% 0 0;
+  padding: 0;
+  float: left;
+}
+
+.list-input {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container .one-qtr-col {
+  box-sizing: border-box;
+  border: 1px solid blue;
+  width: 24%;
+  margin: 0 0 0 1%;
+  padding: 0;
+  float: left;
+}
+
+.buttons {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container .navbar ul {
+  border: 1px solid red;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar ul li {
+  box-sizing: border-box;
+  border: 1px solid green;
+  width: 50%;
+  float: left;
+}
+
+.navbar ul li a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
