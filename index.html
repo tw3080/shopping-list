@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Shopping List</title>
@@ -8,45 +9,55 @@
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
+
+
   <header class="main-header">
     <h1 class="list-title">Shopping List</h1>
   </header>
+
   <div class="main-container">
+
     <div class="list-input">
+
       <div class="three-qtr-col">
         <input type="text" class="list-add" placeholder="What do you need?" />
       </div>
+
       <div class="one-qtr-col">
         <button class="buttons">Add to List</button>
       </div>
+
     </div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#list-tab">List</a></li>
-          <li><a href="#cart-tab">Cart</a></li>
-        </ul>
-      </nav>
-      <div class="content-area">
-        <section id="list-tab">
-          <ul class="fa-ul">
-            <li><i class="fa-li fa fa-square"></i>lol</li>
-            <li><i class="fa-li fa fa-square"></i>lol</li>
-            <li><i class="fa-li fa fa-square"></i>lol</li>
-            <li><i class="fa-li fa fa-square"></i>lol</li>
-            <li><i class="fa-li fa fa-square"></i>lol</li>
-          </ul>
+
+    <div class="tabs">
+      <ul class="tab-links">
+          <li class="active"><a href="#tab1">List</a></li>
+          <li><a href="#tab2">Cart</a></li>
+      </ul>
+
+      <div class="tab-content">
+
+        <div id="tab1" class="tab active">
+          <p>
+              lol
+          </p>
         </div>
-        <section id="cart-tab">
-          <ul>
-            <li><i class="fa-li fa fa-square"></i>wut</li>
-            <li><i class="fa-li fa fa-square"></i>wut</li>
-            <li><i class="fa-li fa fa-square"></i>wut</li>
-            <li><i class="fa-li fa fa-square"></i>wut</li>
-            <li><i class="fa-li fa fa-square"></i>wut</li>
-          </ul>
+
+        <div id="tab2" class="tab">
+          <p>
+            wut
+          </p>
         </div>
+
       </div>
-  </div>
+
+    </div>
+
+  <script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="js/js.js"></script>
+
 </body>
+
 </html>
