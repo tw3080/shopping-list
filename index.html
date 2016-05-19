@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Shopping List</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -11,18 +13,40 @@
     <h1 class="list-title">Shopping List</h1>
   </header>
   <div class="main-container">
-    <div class="three-qtr-col">
-      <input type="text" class="list-input" placeholder="What do you need?" />
+    <div class="list-input">
+      <div class="three-qtr-col">
+        <input type="text" class="list-add" placeholder="What do you need?" />
+      </div>
+      <div class="one-qtr-col">
+        <button class="buttons">Add to List</button>
+      </div>
     </div>
-    <div class="one-qtr-col">
-      <button class="buttons">Add to List</button>
-    </div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#">List</a></li>
-        <li><a href="#">Cart</a></li>
-      </ul>
-    </nav>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#list-tab">List</a></li>
+          <li><a href="#cart-tab">Cart</a></li>
+        </ul>
+      </nav>
+      <div class="content-area">
+        <section id="list-tab">
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-square"></i>lol</li>
+            <li><i class="fa-li fa fa-square"></i>lol</li>
+            <li><i class="fa-li fa fa-square"></i>lol</li>
+            <li><i class="fa-li fa fa-square"></i>lol</li>
+            <li><i class="fa-li fa fa-square"></i>lol</li>
+          </ul>
+        </div>
+        <section id="cart-tab">
+          <ul>
+            <li><i class="fa-li fa fa-square"></i>wut</li>
+            <li><i class="fa-li fa fa-square"></i>wut</li>
+            <li><i class="fa-li fa fa-square"></i>wut</li>
+            <li><i class="fa-li fa fa-square"></i>wut</li>
+            <li><i class="fa-li fa fa-square"></i>wut</li>
+          </ul>
+        </div>
+      </div>
   </div>
 </body>
 </html>
