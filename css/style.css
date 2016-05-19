@@ -1,5 +1,6 @@
 body {
   background-color: lightgray;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .main-header,
@@ -8,54 +9,86 @@ body {
   text-align: center;
 }
 
+.list-title,
+.list-add,
+.buttons,
+li {
+  text-transform: lowercase;
+}
+
+.list-title {
+  letter-spacing: 0.03em;
+  font-size: 3em;
+}
+
 .main-container {
-  border: 1px solid #000;
-  max-width: 25em;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  max-width: 22em;
   margin: 0 auto;
   padding: 0;
 }
 
-.main-container .three-qtr-col {
-  box-sizing: border-box;
-  border: 1px solid blue;
+.list-input {
+  /* border: 1px solid pink;*/
+  width: 100%;
+  margin-bottom: 29px;
+  padding: 0;
+}
+
+.three-qtr-col {
+/*  box-sizing: border-box;
+  border: 1px solid blue; */
   width: 74%;
   margin: 0 1% 0 0;
   padding: 0;
   float: left;
 }
 
-.list-input {
+.list-add {
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 3px;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0.2em 0.3em;
+  font-size: 0.9em;
 }
 
-.main-container .one-qtr-col {
-  box-sizing: border-box;
-  border: 1px solid blue;
-  width: 24%;
-  margin: 0 0 0 1%;
+.one-qtr-col {
+  /*box-sizing: border-box;
+  border: 1px solid blue; */
+  width: 25%;
+  margin: 0;
   padding: 0;
   float: left;
 }
 
 .buttons {
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 3px;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0.2em 0.3em;
+  font-size: 0.9em;
+  background-color: #fff;
 }
 
 .main-container .navbar ul {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  border: 0;
+  border-radius: 3px 3px 0 0;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #C0BEFC;
 }
 
 .navbar ul li {
-  box-sizing: border-box;
-  border: 1px solid green;
+  /* box-sizing: border-box; */
+  /* border: 1px solid green; */
   width: 50%;
   float: left;
 }
@@ -65,4 +98,27 @@ body {
   margin: 0;
   padding: 0;
   text-decoration: none;
+}
+
+.content-area {
+  /* box-sizing: border-box;
+  border: 1px solid yellow; */
+  border: 0;
+  border-radius: 0 0 3px 3px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+}
+
+#list-tab ul {
+  border: 0;
+  margin: 0;
+  padding:  1.3% 8.8%;
+  text-align: left;
+}
+
+#cart-tab {
+  display: none;
+  text-align: left;
 }
