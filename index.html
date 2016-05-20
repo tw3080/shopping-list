@@ -22,11 +22,11 @@
     <div class="list-input">
 
       <div class="three-qtr-col">
-        <input type="text" class="list-add" placeholder="What do you need?" />
+        <input type="text" class="list-add" id="new-item" placeholder="What do you need?" />
       </div>
 
       <div class="one-qtr-col">
-        <button class="buttons">Add to List</button>
+        <button class="buttons" id="add">Add to List</button>
       </div>
 
     </div>
@@ -40,18 +40,18 @@
       <div class="tab-content">
 
         <div id="tab1" class="tab active">
-          <ul>
-            <li>lol<i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></li>
-            <li>lol<i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></li>
-            <li>lol<i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></li>
-            <li>lol<i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></li>
+          <ul id="list-tab">
+            <li>lol<i class="fa fa-times delete" aria-hidden="true"></i><i class="fa fa-check added" aria-hidden="true"></i></li>
+            <li>lol<i class="fa fa-times delete" aria-hidden="true"></i><i class="fa fa-check added" aria-hidden="true"></i></li>
+            <li>lol<i class="fa fa-times delete" aria-hidden="true"></i><i class="fa fa-check added" aria-hidden="true"></i></li>
+            <li>lol<i class="fa fa-times delete" aria-hidden="true"></i><i class="fa fa-check added" aria-hidden="true"></i></li>
           </ul>
         </div>
 
         <div id="tab2" class="tab">
-          <ul>
-            <li><i class="fa fa-times" aria-hidden="true"></i>wut</li>
-            <li><i class="fa fa-times" aria-hidden="true"></i>wut</li>
+          <ul id="cart-tab">
+            <li><i class="fa fa-times delete" aria-hidden="true"></i>wut</li>
+            <li><i class="fa fa-times delete" aria-hidden="true"></i>wut</li>
           </ul>
         </div>
 
