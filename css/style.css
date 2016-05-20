@@ -1,6 +1,7 @@
 body {
-  background-color: lightgray;
+  background-color: #F0F0F0;
   font-family: 'Open Sans', sans-serif;
+  text-transform: lowercase;
 }
 
 .list-title,
@@ -40,6 +41,13 @@ body {
   margin: 0;
   padding: 5px 5px;
   font-size: 0.9em;
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
+  text-transform: lowercase;
+}
+
+.list-add:focus {
+  outline: none;
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.40);
 }
 
 .one-qtr-col {
@@ -57,7 +65,23 @@ body {
   margin: 0;
   padding: 5px 5px;
   font-size: 0.9em;
-  background-color: #fff;
+  text-transform: lowercase;
+  background-color: #958FD6;
+  color: #4c4c4c;
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
+}
+
+.buttons:hover {
+  background-color: #B4B0E5;
+}
+
+.buttons:focus {
+  outline: none;
+}
+
+.button:active {
+  color: #000;
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.40);
 }
 
 /* Tabs */
@@ -74,13 +98,14 @@ body {
   content: '';
 }
 
-.tabs ul {
+.tabs > ul {
   border: 0;
   border-radius: 3px 3px 0 0;
-  margin: 3px 0 0 0;
+  margin: 4px 0 0 0;
   padding: 0;
   overflow: hidden;
-  background-color: #7fb5da;
+  background-color: #958FD6;
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
 }
 
 .tab-links li {
@@ -93,9 +118,10 @@ body {
   padding: 5px 0;
   display: inline-block;
   width: 100%;
-  background-color: #7fb5da;
+  background-color: #958FD6;
   text-decoration: none;
   transition: all linear 0.15s;
+  color: #4c4c4c;
 }
 
 /*
@@ -113,20 +139,20 @@ body {
 */
 
 .tab-links a:hover {
-  background: #a7cce5;
+  background: #B4B0E5;
   text-decoration: none;
 }
 
 li.active a,
 li.active a:hover {
-  background: #fff;
-  color: #4c4c4c;
-  border-radius: 3px 3px 0px 0px;
+  background: #E0DDFF;
+  color: #000;
+  border-radius: 0px;
 }
 
 /* Content of Tabs */
 .tab-content {
-  padding: 15px;
+  padding: 10px 10px 10px 15px;
   border-radius: 0 0 3px 3px;
   box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
   background: #fff;
@@ -138,4 +164,21 @@ li.active a:hover {
 
 .tab.active {
   display: block;
+}
+
+.tab-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+i {
+  float: right;
+  margin: 0 5px;
+  color: #D1D1D1;
+}
+
+i:hover {
+  color: #4c4c4c;
 }
