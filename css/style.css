@@ -73,10 +73,14 @@ body {
 
 .buttons:hover {
   background-color: #B4B0E5;
+  cursor: pointer;
+  transition: all linear 0.15s;
 }
 
 .buttons:focus {
   outline: none;
+  color: #000;
+  transition: all linear 0.15s;
 }
 
 .button:active {
@@ -166,11 +170,24 @@ li.active a:hover {
   display: block;
 }
 
+.tab-content p {
+  color: #767676;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.invisible {
+  display: none;
+}
+
 .tab-content ul {
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: left;
+  font-size: 0.9em;
+  font-weight: 100;
 }
 
 i {
@@ -181,4 +198,11 @@ i {
 
 i:hover {
   color: #4c4c4c;
+  cursor: pointer;
+  transition: all linear 0.15s;
+}
+
+i:active,
+i:focus {
+  color: #000;
 }
